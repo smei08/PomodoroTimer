@@ -1,13 +1,20 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import "./App.css";
+import Quotes from "./components/Quotes/Qutoes";
+import ModeSelector from "./components/ModeSelector/ModeSelector";
+import Timer from "./components/Timer/Timer";
+import SessionCounter from "./components/SessionCounter/SessionCounter";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>Hello world</>;
+  return (
+    <main>
+      <h1>POMODORO TIMER</h1>
+      <Quotes />
+      <ModeSelector />
+      <Timer />
+      <SessionCounter />
+    </main>
+  );
 }
 
 export default App;
